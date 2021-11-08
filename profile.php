@@ -29,7 +29,7 @@ $row = mysqli_fetch_assoc($result);
     <title>Profile Page</title>
 </head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<body>
+<body class="bg-success p-2 text-dark bg-opacity-25">
 
 <div class="container">
 <br> <br>
@@ -44,36 +44,36 @@ $row = mysqli_fetch_assoc($result);
     </tr>
   </thead>
   <tbody>
-    <tr class="table">
+    <tr class="table-light">
       <th scope="row">Empoyee ID: </th>
       <td><?php echo $row["empID"]; ?></td>
     </tr>
-    <tr class="table">
+    <tr class="table-light">
       <th scope="row">Password: </th>
       <td><?php echo $row["passwd"]; ?></td>
     </tr>
-    <tr class="table">
+    <tr class="table-light">
       <th scope="row">Empoyee Name: </th>
       <td><?php echo $row["empName"]; ?></td>
     </tr>
-    <tr class="table">
+    <tr class="table-light">
       <th scope="row">Date of Joining: </th>
       <td><?php echo $row["DoJ"]; ?></td>
     </tr>
-    <tr class="table">
+    <tr class="table-light">
       <th scope="row">Salary: </th>
       <td><?php echo $row["salary"]; ?></td>
     </tr>
-    <tr class="table">
+    <tr class="table-light">
       <th scope="row">Department: </th>
       <td><?php echo $row["department"]; ?></td>
     </tr>
-    <tr class="table">
+    <tr class="table-light">
       <th scope="row">Mobile No.: </th>
       <td><?php echo $row["mobileNo"]; ?></td>
     </tr>
     
-    <tr class="table">
+    <tr class="table-light">
       <th scope="row">Email ID: </th>
       <td><?php echo $row["email"]; ?></td>
     </tr>
@@ -87,7 +87,7 @@ $row = mysqli_fetch_assoc($result);
     <label for="mobile">Mobile Number</label>
     <input type="number" name="mobileinput" class="form-control" id="mobile" placeholder="Enter new mobile number" required>
   </div>
-  <input type="submit" name="mobilebutton" class="btn btn-outline-primary" style="margin-top:3mm;" value="Update Mobile No."/>
+  <input type="submit" name="mobilebutton" class="btn btn-light" style="margin-top:3mm;" value="Update Mobile No."/>
 </form>
 <br>
 <form action="profile.php" method="post">
@@ -95,7 +95,7 @@ $row = mysqli_fetch_assoc($result);
     <label for="email">Email address</label>
     <input type="email" name="emailinput" class="form-control" id="email" placeholder="Enter new email" required>
   </div>
-  <input type="submit" name="emailbutton" class="btn btn-outline-primary" style="margin-top:3mm;" value="Update Email ID"/>
+  <input type="submit" name="emailbutton" class="btn btn-light" style="margin-top:3mm;" value="Update Email ID"/>
 </form>
  </div>
 </div>
